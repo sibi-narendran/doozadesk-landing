@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
-const Hero = () => {
+const Hero = ({ openModal }) => {
     return (
         <div className="pt-40 pb-20 lg:pt-48 lg:pb-32 px-4 sm:px-6 lg:px-8 overflow-hidden relative">
             {/* Background Elements */}
@@ -28,10 +28,17 @@ const Hero = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-                    <a href="https://app.doozadesk.com/app/auth/signup" className="flex items-center justify-center gap-2 bg-primary-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-700 transition-all shadow-xl shadow-primary-500/20 hover:shadow-primary-500/30 hover:-translate-y-1">
+                    <a href="https://app.doozadesk.com/app/auth/signup" onClick={openModal} className="flex items-center justify-center gap-2 bg-primary-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-700 transition-all shadow-xl shadow-primary-500/20 hover:shadow-primary-500/30 hover:-translate-y-1">
                         Create free account
                     </a>
-                    <a href="https://cal.com/sibinarendran/demo" className="flex items-center justify-center gap-2 bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-50 hover:border-slate-300 transition-all hover:-translate-y-1">
+                    <a href="https://cal.com/sibinarendran/demo"
+                        onClick={(e) => {
+                            if (window.gtag) {
+                                window.gtag('event', 'conversion', { 'send_to': 'AW-10872232955' });
+                            }
+                            openModal(e);
+                        }}
+                        className="flex items-center justify-center gap-2 bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-50 hover:border-slate-300 transition-all hover:-translate-y-1">
                         Book a demo
                     </a>
                 </div>

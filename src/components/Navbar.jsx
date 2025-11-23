@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, MessageCircle } from 'lucide-react';
 
-const Navbar = () => {
+const Navbar = ({ openModal }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -33,8 +33,8 @@ const Navbar = () => {
                     </div>
 
                     <div className="hidden md:flex items-center space-x-4">
-                        <a href="https://app.doozadesk.com/app/login" className="text-[15px] font-medium text-slate-600 hover:text-primary-600 transition-colors">Login</a>
-                        <a href="https://app.doozadesk.com/app/auth/signup" className="bg-primary-600 text-white px-5 py-2.5 rounded-full text-[15px] font-semibold hover:bg-primary-700 transition-all shadow-lg shadow-primary-500/20">
+                        <a href="https://app.doozadesk.com/app/login" onClick={openModal} className="text-[15px] font-medium text-slate-600 hover:text-primary-600 transition-colors">Login</a>
+                        <a href="https://app.doozadesk.com/app/auth/signup" onClick={openModal} className="bg-primary-600 text-white px-5 py-2.5 rounded-full text-[15px] font-semibold hover:bg-primary-700 transition-all shadow-lg shadow-primary-500/20">
                             Create free account
                         </a>
                     </div>
@@ -55,8 +55,8 @@ const Navbar = () => {
                         <a href="#pricing" className="block px-3 py-2 text-base font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50 rounded-md">Pricing</a>
                         <a href="#" className="block px-3 py-2 text-base font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50 rounded-md">Resources</a>
                         <div className="pt-4 flex flex-col gap-3">
-                            <a href="https://app.doozadesk.com/app/login" className="block text-center text-base font-medium text-slate-600 hover:text-primary-600">Login</a>
-                            <a href="https://app.doozadesk.com/app/auth/signup" className="w-full bg-primary-600 text-white px-5 py-3 rounded-full font-semibold hover:bg-primary-700 transition-colors text-center">
+                            <a href="https://app.doozadesk.com/app/login" onClick={openModal} className="block text-center text-base font-medium text-slate-600 hover:text-primary-600">Login</a>
+                            <a href="https://app.doozadesk.com/app/auth/signup" onClick={openModal} className="w-full bg-primary-600 text-white px-5 py-3 rounded-full font-semibold hover:bg-primary-700 transition-colors text-center">
                                 Create free account
                             </a>
                         </div>

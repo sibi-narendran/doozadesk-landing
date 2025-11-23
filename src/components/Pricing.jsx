@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Check, Plus, Minus } from 'lucide-react';
 
-const Pricing = () => {
+const Pricing = ({ openModal }) => {
     const [aiAgents, setAiAgents] = useState(1);
     const pricePerAgent = 18;
     const resolutionsPerAgent = 100;
@@ -30,9 +30,9 @@ const Pricing = () => {
                         <p className="text-slate-600 mb-8">
                             Complete access to all features for human agents. No hidden fees.
                         </p>
-                        <button className="w-full bg-primary-600 text-white py-3 rounded-xl font-semibold hover:bg-primary-700 transition-colors mb-8">
+                        <a href="https://app.doozadesk.com/app/auth/signup" onClick={openModal} className="block w-full bg-primary-600 text-white py-3 rounded-xl font-semibold hover:bg-primary-700 transition-colors mb-8 text-center">
                             Get Started for Free
-                        </button>
+                        </a>
                         <ul className="space-y-4">
                             {[
                                 'Unlimited human agents',
@@ -81,9 +81,9 @@ const Pricing = () => {
                             </div>
                         </div>
 
-                        <button className="w-full bg-white text-slate-900 py-3 rounded-xl font-semibold hover:bg-slate-100 transition-colors mb-8">
+                        <a href="https://app.doozadesk.com/app/auth/signup" onClick={openModal} className="block w-full bg-white text-slate-900 py-3 rounded-xl font-semibold hover:bg-slate-100 transition-colors mb-8 text-center">
                             Subscribe Now
-                        </button>
+                        </a>
                         <ul className="space-y-4">
                             {[
                                 'Full AI Agent (Captain)',
