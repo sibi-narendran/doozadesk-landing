@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Logos from './components/Logos';
@@ -10,32 +10,61 @@ import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = React.useState(false);
-  const [hasClosedModal, setHasClosedModal] = React.useState(false);
-  const hasClosedModalRef = React.useRef(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [pendingUrl, setPendingUrl] = useState(null);
+  const [hasScrolled, setHasScrolled] = useState(false);
+  const [timeElapsed, setTimeElapsed] = useState(false);
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
-    setHasClosedModal(true);
-    hasClosedModalRef.current = true;
-  };
 
-  const handleAction = (e) => {
-    if (!hasClosedModal) {
-      if (e) e.preventDefault();
-      setIsModalOpen(true);
+    if (pendingUrl) {
+      window.location.href = pendingUrl;
+      setPendingUrl(null);
     }
   };
 
-  React.useEffect(() => {
-    const timer = setTimeout(() => {
-      if (!hasClosedModalRef.current) {
-        setIsModalOpen(true);
+  const handleAction = (e) => {
+    if (e) {
+      e.preventDefault();
+      const url = e.currentTarget.href;
+      if (url) {
+        setPendingUrl(url);
       }
-    }, 20000); // Open after 20 seconds
+    }
+    setIsModalOpen(true);
+    sessionStorage.setItem('doozadesk_popup_shown', 'true');
+  };
+
+  // Timer: 10 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeElapsed(true);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, []);
+
+  // Scroll Listener
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) { // Scrolled at least a bit
+        setHasScrolled(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Auto-open logic
+  useEffect(() => {
+    const hasShown = sessionStorage.getItem('doozadesk_popup_shown');
+    if (timeElapsed && hasScrolled && !hasShown && !isModalOpen) {
+      setIsModalOpen(true);
+      sessionStorage.setItem('doozadesk_popup_shown', 'true');
+    }
+  }, [timeElapsed, hasScrolled, isModalOpen]); // Added isModalOpen to dependencies to prevent re-opening if already open
 
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900">
