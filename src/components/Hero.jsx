@@ -11,11 +11,7 @@ const Hero = ({ openModal }) => {
             </div>
 
             <div className="max-w-7xl mx-auto text-center relative z-10">
-                <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-4 py-1.5 mb-8 shadow-sm hover:border-primary-200 transition-colors cursor-pointer group">
-                    <span className="bg-primary-100 text-primary-700 text-xs font-bold px-2 py-0.5 rounded-full">New</span>
-                    <span className="text-sm text-slate-600 font-medium group-hover:text-primary-700 transition-colors">Doozadesk AI Agent is here</span>
-                    <ArrowRight size={14} className="text-slate-400 group-hover:text-primary-600 transition-colors" />
-                </div>
+
 
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tight mb-8 leading-[1.1]">
                     Customer Support? <br className="hidden md:block" />
