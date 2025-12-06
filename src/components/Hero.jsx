@@ -15,7 +15,7 @@ const Hero = ({ openModal }) => {
 
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tight mb-8 leading-[1.1]">
                     Customer Support? <br className="hidden md:block" />
-                    <span className="text-primary-600">Dooza Does It.</span>
+                    <span className="text-primary-600">Dooza desk Does It.</span>
                 </h1>
 
                 <p className="text-xl md:text-3xl text-slate-600 max-w-3xl mx-auto mb-12 leading-relaxed font-normal">
@@ -23,7 +23,7 @@ const Hero = ({ openModal }) => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-                    <a href="https://app.doozadesk.com/app/auth/signup" onClick={openModal} className="flex items-center justify-center gap-2 bg-primary-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-700 transition-all shadow-xl shadow-primary-500/20 hover:shadow-primary-500/30 hover:-translate-y-1">
+                    <a href="https://app.Dooza desk.com/app/auth/signup" onClick={openModal} className="flex items-center justify-center gap-2 bg-primary-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-700 transition-all shadow-xl shadow-primary-500/20 hover:shadow-primary-500/30 hover:-translate-y-1">
                         Create free account
                     </a>
                     <a href="https://cal.com/sibinarendran/demo"
@@ -60,7 +60,7 @@ const Hero = ({ openModal }) => {
                         <div className="bg-slate-800 rounded-xl overflow-hidden aspect-[16/9] relative">
                             <img
                                 src="/images/dashboard.webp"
-                                alt="Doozadesk Unified Dashboard Interface"
+                                alt="Dooza desk Unified Dashboard Interface"
                                 width="1152"
                                 height="648"
                                 loading="eager"

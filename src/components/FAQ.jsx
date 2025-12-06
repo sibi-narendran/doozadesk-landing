@@ -3,8 +3,8 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const faqs = [
   {
-    question: "Is Doozadesk really free for human agents?",
-    answer: "Yes! Doozadesk offers unlimited seats for your human support team at $0/month forever. We believe you shouldn't be penalized for growing your team. You only pay for AI Agent resolutions when they successfully solve a customer ticket."
+    question: "Is Dooza desk really free for human agents?",
+    answer: "Yes! Dooza desk offers unlimited seats for your human support team at $0/month forever. We believe you shouldn't be penalized for growing your team. You only pay for AI Agent resolutions when they successfully solve a customer ticket."
   },
   {
     question: "How does the AI Agent pricing work?",
@@ -15,12 +15,12 @@ const faqs = [
     answer: "Absolutely. We offer a one-click migration tool that imports your tickets, customers, tags, and macros from Zendesk, Gorgias, and other major helpdesks. You can switch without losing your history."
   },
   {
-    question: "Does Doozadesk integrate with Shopify?",
-    answer: "Yes, we have a deep, native integration with Shopify. You can see customer order history, refund orders, cancel shipments, and modify subscriptions directly from the Doozadesk inbox without switching tabs."
+    question: "Does Dooza desk integrate with Shopify?",
+    answer: "Yes, we have a deep, native integration with Shopify. You can see customer order history, refund orders, cancel shipments, and modify subscriptions directly from the Dooza desk inbox without switching tabs."
   },
   {
     question: "What channels do you support?",
-    answer: "Doozadesk creates a unified inbox for Email, Live Chat, Instagram DMs, Facebook Messenger, WhatsApp, and SMS. All your customer conversations live in one place."
+    answer: "Dooza desk creates a unified inbox for Email, Live Chat, Instagram DMs, Facebook Messenger, WhatsApp, and SMS. All your customer conversations live in one place."
   }
 ];
 
@@ -39,7 +39,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-slate-600">
-            Everything you need to know about Doozadesk.
+            Everything you need to know about Dooza desk.
           </p>
         </div>
 

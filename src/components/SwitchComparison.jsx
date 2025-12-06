@@ -14,7 +14,7 @@ const SwitchComparison = ({ openModal }) => {
                         Switch from Zendesk or Gorgias today
                     </h2>
                     <p className="text-xl text-slate-600">
-                        Stop paying for human seats you don't need. Get better automation at an affordable price with Doozadesk's AI-first platform.
+                        Stop paying for human seats you don't need. Get better automation at an affordable price with Dooza desk's AI-first platform.
                     </p>
                 </div>
 
@@ -48,13 +48,13 @@ const SwitchComparison = ({ openModal }) => {
                         </ul>
                     </div>
 
-                    {/* Doozadesk Card */}
+                    {/* Dooza desk Card */}
                     <div className="bg-white rounded-2xl p-8 border-2 border-primary-500 shadow-xl shadow-primary-500/10 relative z-10 transform md:-translate-y-4">
                         <div className="absolute top-0 right-0 bg-primary-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg uppercase tracking-wider">
                             Best Value
                         </div>
                         <div className="mb-8">
-                            <h3 className="text-2xl font-bold text-slate-900 mb-2">Doozadesk</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-2">Dooza desk</h3>
                             <p className="text-primary-600 font-medium">AI-First Customer Support</p>
                         </div>
                         <ul className="space-y-5">
@@ -85,7 +85,7 @@ const SwitchComparison = ({ openModal }) => {
                         </ul>
                         <div className="mt-8 pt-8 border-t border-slate-100">
                             <a 
-                                href="https://app.doozadesk.com/app/auth/signup" 
+                                href="https://app.Dooza desk.com/app/auth/signup" 
                                 onClick={openModal}
                                 className="flex items-center justify-center w-full gap-2 bg-primary-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-primary-700 transition-all hover:shadow-lg hover:-translate-y-1"
                             >
@@ -107,7 +107,7 @@ const SwitchComparison = ({ openModal }) => {
                             <div className="flex flex-col gap-2">
                                 <h4 className="font-bold text-slate-900 text-lg">Affordable Price</h4>
                                 <p className="text-slate-600 text-sm leading-relaxed">
-                                    Stop paying $60-100/month per agent. With Doozadesk, bring your whole team for free and only pay when AI solves a problem.
+                                    Stop paying $60-100/month per agent. With Dooza desk, bring your whole team for free and only pay when AI solves a problem.
                                 </p>
                             </div>
                             <div className="flex flex-col gap-2">

@@ -8,12 +8,12 @@ const BottomCTA = ({ openModal }) => {
                     Ready to improve your customer support?
                 </h2>
                 <p className="text-xl text-slate-600 mb-12 max-w-2xl mx-auto">
-                    Join thousands of companies using Doozadesk to support their customers.
+                    Join thousands of companies using Dooza desk to support their customers.
                     Get started for free today.
                 </p>
 
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="https://app.doozadesk.com/app/auth/signup" onClick={openModal} className="bg-primary-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-700 transition-all shadow-xl shadow-primary-500/20 hover:shadow-primary-500/30 hover:-translate-y-1">
+                    <a href="https://app.Dooza desk.com/app/auth/signup" onClick={openModal} className="bg-primary-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-700 transition-all shadow-xl shadow-primary-500/20 hover:shadow-primary-500/30 hover:-translate-y-1">
                         Create free account
                     </a>
                     <a href="https://cal.com/sibinarendran/demo"

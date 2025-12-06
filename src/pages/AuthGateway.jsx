@@ -7,7 +7,7 @@ import SEO from '../components/SEO';
 const AuthGateway = () => {
     const [searchParams] = useSearchParams();
     const type = searchParams.get('type') || 'signup'; // 'login' or 'signup'
-    const redirectUrl = searchParams.get('redirect') || 'https://app.doozadesk.com/app/auth/signup';
+    const redirectUrl = searchParams.get('redirect') || 'https://app.Dooza desk.com/app/auth/signup';
 
     const [formData, setFormData] = useState({
         name: '',
@@ -18,7 +18,7 @@ const AuthGateway = () => {
 
     const isLogin = type === 'login';
     const title = isLogin ? 'Welcome Back' : 'Create your account';
-    const subtitle = isLogin ? 'Sign in to continue to Doozadesk' : 'Get started with Doozadesk for free';
+    const subtitle = isLogin ? 'Sign in to continue to Dooza desk' : 'Get started with Dooza desk for free';
     const buttonText = isLogin ? 'Sign In' : 'Create Account';
 
     const handleChange = (e) => {

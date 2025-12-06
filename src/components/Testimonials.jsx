@@ -6,7 +6,7 @@ const Testimonials = () => {
         {
             name: "Sibi",
             role: "Founder, Interior Square",
-            content: "Doozadesk is simply amazing. It helped us organize all our customer chats in one place. The AI features are a lifesaver!",
+            content: "Dooza desk is simply amazing. It helped us organize all our customer chats in one place. The AI features are a lifesaver!",
             initial: "S",
             color: "bg-blue-100 text-blue-600"
         },
@@ -34,7 +34,7 @@ const Testimonials = () => {
                         Loved by customer support teams
                     </h2>
                     <p className="text-xl text-slate-600">
-                        See what our customers have to say about Doozadesk.
+                        See what our customers have to say about Dooza desk.
                     </p>
                 </div>
 

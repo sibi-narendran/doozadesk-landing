@@ -11,7 +11,7 @@ import rehypeSanitize from 'rehype-sanitize';
 const blogArticles = {
     'gorgias-alternatives': {
         title: 'Top 5 Gorgias Alternatives in 2025',
-        author: 'Dooza Team',
+        author: 'Dooza desk Team',
         date: 'December 6, 2025',
         readTime: '8 min read',
         category: 'Product Comparison',
@@ -20,7 +20,7 @@ const blogArticles = {
     },
     'instagram-direct': {
         title: 'Instagram Direct Messaging for E-commerce',
-        author: 'Dooza Team',
+        author: 'Dooza desk Team',
         date: 'December 5, 2025',
         readTime: '6 min read',
         category: 'Social Commerce',
@@ -85,9 +85,9 @@ export default function BlogPost() {
         <div className="min-h-screen bg-white overflow-x-hidden">
             <SEO 
                 title={article.title}
-                description={article.excerpt || `${article.title} - Read more on Doozadesk Blog.`}
+                description={article.excerpt || `${article.title} - Read more on Dooza desk Blog.`}
                 keywords={article.tags ? article.tags.join(', ') : ''}
-                canonicalUrl={`https://doozadesk.com/blog/${slug}`}
+                canonicalUrl={`https://Dooza desk.com/blog/${slug}`}
                 structuredData={{
                     "@context": "https://schema.org",
                     "@type": "BlogPosting",

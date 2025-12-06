@@ -22,7 +22,7 @@ const Integrations = () => {
                     Connect with your favorite tools
                 </h2>
                 <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-16">
-                    Integrate Doozadesk with the tools you already use. Sync data, automate workflows, and keep everything in sync.
+                    Integrate Dooza desk with the tools you already use. Sync data, automate workflows, and keep everything in sync.
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">

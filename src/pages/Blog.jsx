@@ -20,9 +20,9 @@ export default function Blog() {
         <div className="min-h-screen bg-white overflow-x-hidden">
             <SEO 
                 title="Blog | Insights & Resources"
-                description="Expert insights on AI-powered customer support, Shopify automation, and e-commerce excellence. Stay ahead with Doozadesk."
+                description="Expert insights on AI-powered customer support, Shopify automation, and e-commerce excellence. Stay ahead with Dooza desk."
                 keywords="customer support blog, AI support insights, ecommerce customer service, shopify support tips"
-                canonicalUrl="https://doozadesk.com/blog"
+                canonicalUrl="https://Dooza desk.com/blog"
             />
             <Navbar />
 
@@ -37,7 +37,7 @@ export default function Blog() {
                     </div>
 
                     <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-slate-900 mb-6 tracking-tight">
-                        Dooza Blog
+                        Dooza desk Blog
                     </h1>
 
                     <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-8">

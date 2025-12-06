@@ -5,12 +5,13 @@ import { Routes, Route } from 'react-router-dom';
 const LandingPage = lazy(() => import('./pages/LandingPage'));
 const AuthGateway = lazy(() => import('./pages/AuthGateway'));
 const Admin = lazy(() => import('./pages/Admin'));
-const FeaturesPage = lazy(() => import('./pages/FeaturesPage'));
 const PricingPage = lazy(() => import('./pages/PricingPage'));
 const Blog = lazy(() => import('./pages/Blog'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
 const InstagramDirectBlog = lazy(() => import('./pages/InstagramDirectBlog'));
 const GorgiasAlternativesBlog = lazy(() => import('./pages/GorgiasAlternativesBlog'));
+const PartnerProgram = lazy(() => import('./pages/PartnerProgram'));
+const PartnerSignup = lazy(() => import('./pages/PartnerSignup'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 // Loading Fallback
@@ -27,11 +28,12 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/get-started" element={<AuthGateway />} />
         <Route path="/admin" element={<Admin />} />
-        <Route path="/features" element={<FeaturesPage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/instagram-direct" element={<InstagramDirectBlog />} />
         <Route path="/blog/gorgias-alternatives" element={<GorgiasAlternativesBlog />} />
+        <Route path="/partners" element={<PartnerProgram />} />
+        <Route path="/partner-signup" element={<PartnerSignup />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

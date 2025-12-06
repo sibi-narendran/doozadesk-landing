@@ -19,7 +19,7 @@ const InstagramDirectBlog = () => {
             setIsBookingModalOpen(true);
         } else {
             const type = url && url.includes('login') ? 'login' : 'signup';
-            const redirect = url || 'https://app.doozadesk.com/app/auth/signup';
+            const redirect = url || 'https://app.Dooza desk.com/app/auth/signup';
             navigate(`/get-started?type=${type}&redirect=${encodeURIComponent(redirect)}`);
         }
     };
@@ -61,9 +61,9 @@ const InstagramDirectBlog = () => {
         <div className="min-h-screen bg-white font-sans text-slate-900 overflow-x-hidden">
             <SEO 
                 title="What is Instagram Direct? A Simple Guide for Everyone" 
-                description="Curious about IG Direct? Here's the lowdown on Instagram Direct, why it's huge for businesses, and how tools like Dooza Desk help manage the DM chaos."
+                description="Curious about IG Direct? Here's the lowdown on Instagram Direct, why it's huge for businesses, and how tools like Dooza desk Desk help manage the DM chaos."
                 keywords="instagram direct, ig direct, what is instagram direct, instagram dm for business"
-                canonicalUrl="https://doozadesk.com/blog/instagram-direct"
+                canonicalUrl="https://Dooza desk.com/blog/instagram-direct"
             />
             
             <Navbar openModal={handleAction} />
@@ -119,7 +119,7 @@ const InstagramDirectBlog = () => {
                                     onClick={handleAction} 
                                     className="w-full py-2 px-4 bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium rounded-lg transition-colors"
                                 >
-                                    Check Out Dooza
+                                    Check Out Dooza desk
                                 </button>
                             </div>
                         </div>
@@ -218,17 +218,17 @@ const InstagramDirectBlog = () => {
                             </div>
                         </section>
 
-                        {/* Integration - Subtle Dooza Desk Mention */}
+                        {/* Integration - Subtle Dooza desk Desk Mention */}
                         <section id="integration" className="scroll-mt-28">
                             <h2 className="text-3xl font-bold text-slate-900 mb-6">How Businesses Organize Instagram Direct</h2>
                             <p className="text-slate-600 mb-6">
-                                Remember that "500 messages a day" scenario? To handle that without losing their minds, businesses use tools like <strong>Dooza Desk</strong>.
+                                Remember that "500 messages a day" scenario? To handle that without losing their minds, businesses use tools like <strong>Dooza desk Desk</strong>.
                             </p>
                             <div className="bg-primary-50 border border-primary-100 rounded-2xl p-8 flex flex-col md:flex-row gap-8 items-center">
                                 <div className="flex-1">
                                     <h3 className="text-2xl font-bold text-slate-900 mb-4">Businesses use tools</h3>
                                     <p className="text-slate-700 mb-6">
-                                        Instead of just staring at a phone screen all day, Dooza Desk puts all those <strong>Instagram Direct</strong> messages into one neat dashboard on their computer. It’s like an inbox for all your social chats, so nothing gets lost and everyone gets a reply.
+                                        Instead of just staring at a phone screen all day, Dooza desk Desk puts all those <strong>Instagram Direct</strong> messages into one neat dashboard on their computer. It’s like an inbox for all your social chats, so nothing gets lost and everyone gets a reply.
                                     </p>
                                     <p className="text-slate-700 text-sm italic">
                                         Basically, it keeps the business organized so they can focus on the fun stuff.
@@ -249,7 +249,7 @@ const InstagramDirectBlog = () => {
                                 {[
                                     {
                                         q: "Can I use IG Direct on my laptop?",
-                                        a: "Yep! You can use the browser version, or tools like Dooza Desk if you're running a business."
+                                        a: "Yep! You can use the browser version, or tools like Dooza desk Desk if you're running a business."
                                     },
                                     {
                                         q: "Is it safe?",

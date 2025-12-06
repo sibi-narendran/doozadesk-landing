@@ -32,12 +32,12 @@ function LandingPage() {
             // It's a login/signup link -> Redirect to Auth Gateway Page
             // Determine type based on URL or text
             const type = url && url.includes('login') ? 'login' : 'signup';
-            const redirect = url || 'https://app.doozadesk.com/app/auth/signup';
+            const redirect = url || 'https://app.Dooza desk.com/app/auth/signup';
 
             navigate(`/get-started?type=${type}&redirect=${encodeURIComponent(redirect)}`);
         }
 
-        sessionStorage.setItem('doozadesk_popup_shown', 'true');
+        sessionStorage.setItem('Dooza desk_popup_shown', 'true');
     };
 
     // Timer: 10 seconds
@@ -63,10 +63,10 @@ function LandingPage() {
 
     // Auto-open logic -> Open Booking Modal
     useEffect(() => {
-        const hasShown = sessionStorage.getItem('doozadesk_popup_shown');
+        const hasShown = sessionStorage.getItem('Dooza desk_popup_shown');
         if (timeElapsed && hasScrolled && !hasShown && !isBookingModalOpen) {
             setIsBookingModalOpen(true);
-            sessionStorage.setItem('doozadesk_popup_shown', 'true');
+            sessionStorage.setItem('Dooza desk_popup_shown', 'true');
         }
     }, [timeElapsed, hasScrolled, isBookingModalOpen]);
 
@@ -75,17 +75,17 @@ function LandingPage() {
         "@graph": [
             {
                 "@type": "Organization",
-                "name": "Doozadesk",
-                "url": "https://doozadesk.com",
-                "logo": "https://doozadesk.com/favicon.png",
+                "name": "Dooza desk",
+                "url": "https://Dooza desk.com",
+                "logo": "https://Dooza desk.com/favicon.png",
                 "sameAs": [
-                    "https://twitter.com/doozadesk",
-                    "https://linkedin.com/company/doozadesk"
+                    "https://twitter.com/Dooza desk",
+                    "https://linkedin.com/company/Dooza desk"
                 ]
             },
             {
                 "@type": "SoftwareApplication",
-                "name": "Doozadesk",
+                "name": "Dooza desk",
                 "applicationCategory": "BusinessApplication",
                 "operatingSystem": "Web",
                 "offers": {
@@ -113,9 +113,9 @@ function LandingPage() {
         <div className="min-h-screen bg-white font-sans text-slate-900">
             <SEO 
                 title="AI-Powered Customer Support Platform" 
-                description="Doozadesk is the all-in-one customer support platform with AI agents, unified inbox, and omnichannel support. Scale your support without scaling headcount."
+                description="Dooza desk is the all-in-one customer support platform with AI agents, unified inbox, and omnichannel support. Scale your support without scaling headcount."
                 keywords="customer support, AI support agents, helpdesk software, omnichannel support, customer service automation"
-                canonicalUrl="https://doozadesk.com/"
+                canonicalUrl="https://Dooza desk.com/"
                 structuredData={structuredData}
             />
             <Navbar openModal={handleAction} />

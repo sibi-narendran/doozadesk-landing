@@ -6,18 +6,13 @@ import { blogPosts } from './src/data/blogData.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const DOMAIN = 'https://doozadesk.com';
+const DOMAIN = 'https://Dooza desk.com';
 
 const staticPages = [
   {
     url: '/',
     changefreq: 'weekly',
     priority: 1.0,
-  },
-  {
-    url: '/features',
-    changefreq: 'weekly',
-    priority: 0.9,
   },
   {
     url: '/pricing',
@@ -28,6 +23,11 @@ const staticPages = [
     url: '/blog',
     changefreq: 'weekly',
     priority: 0.9,
+  },
+  {
+    url: '/partners',
+    changefreq: 'monthly',
+    priority: 0.8,
   },
 ];
 

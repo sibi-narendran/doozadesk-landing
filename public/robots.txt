@@ -15,4 +15,4 @@ Disallow: /admin
 Disallow: /get-started
 Disallow: /app/*
 
-Sitemap: https://doozadesk.com/sitemap.xml
+Sitemap: https://Dooza desk.com/sitemap.xml

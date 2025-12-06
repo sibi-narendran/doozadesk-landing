@@ -12,7 +12,7 @@ const AIOverlaySection = ({ openModal }) => {
                             <span className="text-primary-600">Add AI Superpowers.</span>
                         </h2>
                         <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                            Not ready to migrate? You don't have to. Doozadesk sits on top of your existing helpdesk to automate tickets while keeping your team in their familiar tools.
+                            Not ready to migrate? You don't have to. Dooza desk sits on top of your existing helpdesk to automate tickets while keeping your team in their familiar tools.
                         </p>
 
                         <div className="space-y-6 mb-10">
@@ -40,7 +40,7 @@ const AIOverlaySection = ({ openModal }) => {
                         </div>
 
                         <a 
-                            href="https://app.doozadesk.com/app/auth/signup" 
+                            href="https://app.Dooza desk.com/app/auth/signup" 
                             onClick={openModal}
                             className="inline-flex items-center gap-2 text-primary-600 font-bold text-lg hover:text-primary-700 transition-colors group"
                         >
@@ -58,12 +58,12 @@ const AIOverlaySection = ({ openModal }) => {
                             </div>
 
                             <div className="flex flex-col items-center gap-8 relative z-10">
-                                {/* Doozadesk Top Node */}
+                                {/* Dooza desk Top Node */}
                                 <div className="bg-white p-6 rounded-2xl shadow-xl border border-primary-100 flex flex-col items-center w-48 transform hover:-translate-y-1 transition-transform duration-300">
                                     <div className="w-12 h-12 bg-primary-600 rounded-xl flex items-center justify-center mb-3 text-white font-bold text-xl">
                                         D
                                     </div>
-                                    <span className="font-bold text-slate-900">Doozadesk AI</span>
+                                    <span className="font-bold text-slate-900">Dooza desk AI</span>
                                     <span className="text-xs text-primary-600 font-medium bg-primary-50 px-2 py-1 rounded-full mt-2">
                                         Active Layer
                                     </span>

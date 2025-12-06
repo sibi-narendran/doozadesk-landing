@@ -16,7 +16,7 @@ const PricingPage = () => {
     // For now, let's make it redirect to signup
     const handlePricingAction = (e) => {
         if (e) e.preventDefault();
-        navigate('/get-started?type=signup&redirect=https://app.doozadesk.com/app/auth/signup');
+        navigate('/get-started?type=signup&redirect=https://app.dooza.co/app/auth/signup');
     };
 
     const faqs = [
@@ -44,7 +44,7 @@ const PricingPage = () => {
                 title="Pricing | Free Unlimited Human Seats"
                 description="Simple, transparent pricing. Unlimited human agents are free forever. Only pay for AI resolutions. No contracts, cancel anytime."
                 keywords="helpdesk pricing, free customer support software, customer service pricing, AI agent cost, unlimited agents free"
-                canonicalUrl="https://doozadesk.com/pricing"
+                canonicalUrl="https://dooza.co/pricing"
             />
             <Navbar />
             <div className="pt-20">

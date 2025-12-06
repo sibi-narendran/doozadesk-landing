@@ -11,7 +11,7 @@ const SEO = ({
   geo, // { region, placename, position }
   hreflangs // Array of { lang, href }
 }) => {
-  const siteTitle = 'Doozadesk';
+  const siteTitle = 'Dooza desk';
   const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle;
 
   return (

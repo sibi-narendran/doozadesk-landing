@@ -32,7 +32,7 @@ const Pricing = ({ openModal, headingLevel = 'h2' }) => {
                         <p className="text-slate-600 mb-8">
                             Invite your entire team. No per-seat pricing, no hidden fees.
                         </p>
-                        <a href="https://app.doozadesk.com/app/auth/signup" onClick={openModal} className="block w-full bg-primary-600 text-white py-3 rounded-xl font-semibold hover:bg-primary-700 transition-colors mb-8 text-center">
+                        <a href="https://app.Dooza desk.com/app/auth/signup" onClick={openModal} className="block w-full bg-primary-600 text-white py-3 rounded-xl font-semibold hover:bg-primary-700 transition-colors mb-8 text-center">
                             Get Started for Free
                         </a>
                         <ul className="space-y-4">
@@ -83,7 +83,7 @@ const Pricing = ({ openModal, headingLevel = 'h2' }) => {
                             </div>
                         </div>
 
-                        <a href="https://app.doozadesk.com/app/auth/signup" onClick={openModal} className="block w-full bg-white text-slate-900 py-3 rounded-xl font-semibold hover:bg-slate-100 transition-colors mb-8 text-center">
+                        <a href="https://app.Dooza desk.com/app/auth/signup" onClick={openModal} className="block w-full bg-white text-slate-900 py-3 rounded-xl font-semibold hover:bg-slate-100 transition-colors mb-8 text-center">
                             Subscribe Now
                         </a>
                         <ul className="space-y-4">

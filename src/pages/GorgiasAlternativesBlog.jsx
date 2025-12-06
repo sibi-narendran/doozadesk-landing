@@ -35,7 +35,7 @@ const GorgiasAlternativesBlog = () => {
             setIsBookingModalOpen(true);
         } else {
             const type = url && url.includes('login') ? 'login' : 'signup';
-            const redirect = url || 'https://app.doozadesk.com/app/auth/signup';
+            const redirect = url || 'https://app.Dooza desk.com/app/auth/signup';
             navigate(`/get-started?type=${type}&redirect=${encodeURIComponent(redirect)}`);
         }
     };
@@ -47,7 +47,7 @@ const GorgiasAlternativesBlog = () => {
                 'introduction', 
                 'criteria', 
                 'top-5-list', 
-                'dooza-review', 
+                'Dooza desk-review', 
                 'richpanel-review', 
                 'zendesk-review', 
                 'gladly-review', 
@@ -85,13 +85,13 @@ const GorgiasAlternativesBlog = () => {
             // Adjust threshold as needed
             const threshold = docHeight - 1000; 
             
-            const hasShown = sessionStorage.getItem('doozadesk_blog_popup_shown');
+            const hasShown = sessionStorage.getItem('Dooza desk_blog_popup_shown');
             
             if (scrollPosition > threshold && !hasShown && !isBookingModalOpen) {
                 // Small delay to not be too aggressive immediately upon hitting the threshold
                 setTimeout(() => {
                     setIsBookingModalOpen(true);
-                    sessionStorage.setItem('doozadesk_blog_popup_shown', 'true');
+                    sessionStorage.setItem('Dooza desk_blog_popup_shown', 'true');
                 }, 500);
             }
         };
@@ -119,8 +119,8 @@ const GorgiasAlternativesBlog = () => {
             <SEO 
                 title="Top 5 Gorgias Alternatives in 2025 (Ranked & Reviewed)" 
                 description="Looking for a Gorgias alternative? We review the top 5 help desks for Shopify, comparing pricing, AI features, and native integration capabilities."
-                keywords="gorgias alternatives, best shopify helpdesk, richpanel vs gorgias, dooza vs gorgias, zendesk alternative"
-                canonicalUrl="https://doozadesk.com/blog/gorgias-alternatives"
+                keywords="gorgias alternatives, best shopify helpdesk, richpanel vs gorgias, Dooza desk vs gorgias, zendesk alternative"
+                canonicalUrl="https://Dooza desk.com/blog/gorgias-alternatives"
             />
             
             <Navbar openModal={handleAction} />
@@ -157,13 +157,13 @@ const GorgiasAlternativesBlog = () => {
                                     { id: 'introduction', label: 'Introduction' },
                                     { id: 'criteria', label: 'Evaluation Criteria' },
                                     { id: 'top-5-list', label: 'Top 5 Alternatives List' },
-                                    { id: 'dooza-review', label: '1. Dooza.co (Best Overall)' },
+                                    { id: 'Dooza desk-review', label: '1. Dooza desk.co (Best Overall)' },
                                     { id: 'richpanel-review', label: '2. Richpanel' },
                                     { id: 'zendesk-review', label: '3. Zendesk' },
                                     { id: 'gladly-review', label: '4. Gladly' },
                                     { id: 'reamaze-review', label: '5. Re:Amaze' },
                                     { id: 'native-difference', label: 'Why "Native" Matters' },
-                                    { id: 'comparison', label: 'Dooza vs Richpanel' },
+                                    { id: 'comparison', label: 'Dooza desk vs Richpanel' },
                                     { id: 'conclusion', label: 'Conclusion & Verdict' },
                                     { id: 'faq', label: 'FAQ' },
                                 ].map((item) => (
@@ -225,7 +225,7 @@ const GorgiasAlternativesBlog = () => {
                                 <ol className="divide-y divide-slate-100">
                                     <li className="p-4 flex items-center gap-4 bg-primary-50">
                                         <span className="flex items-center justify-center w-8 h-8 bg-primary-600 text-white font-bold rounded-full">1</span>
-                                        <span className="font-bold text-lg text-slate-900">Dooza.co</span>
+                                        <span className="font-bold text-lg text-slate-900">Dooza desk.co</span>
                                         <span className="ml-auto text-sm font-medium text-primary-700 bg-white px-3 py-1 rounded-full border border-primary-100">Best Overall</span>
                                     </li>
                                     <li className="p-4 flex items-center gap-4 hover:bg-slate-50">
@@ -248,20 +248,20 @@ const GorgiasAlternativesBlog = () => {
                             </div>
                         </section>
 
-                        {/* Dooza Review */}
-                        <section id="dooza-review" className="scroll-mt-28">
+                        {/* Dooza desk Review */}
+                        <section id="Dooza desk-review" className="scroll-mt-28">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="bg-primary-100 p-2 rounded-lg">
                                     <Star className="w-6 h-6 text-primary-600 fill-primary-600" />
                                 </div>
-                                <h2 className="text-3xl font-bold text-slate-900">Alternative #1: Dooza.co</h2>
+                                <h2 className="text-3xl font-bold text-slate-900">Alternative #1: Dooza desk.co</h2>
                             </div>
                             
                             <p className="text-base md:text-lg text-slate-600 mb-6 font-medium">Known for: AI-Native Workflows & Shopify Deep Integration</p>
                             
                             <div className="prose md:prose-lg text-slate-600">
                                 <p className="mb-6">
-                                    Dooza.co represents the next generation of e-commerce customer support. Unlike Gorgias, which was built in the pre-AI era, <strong>Dooza was built from the ground up for AI-native workflows</strong>. It doesn't just connect to Shopify via API—it deeply understands your infrastructure to deliver unprecedented automation.
+                                    Dooza desk.co represents the next generation of e-commerce customer support. Unlike Gorgias, which was built in the pre-AI era, <strong>Dooza desk was built from the ground up for AI-native workflows</strong>. It doesn't just connect to Shopify via API—it deeply understands your infrastructure to deliver unprecedented automation.
                                 </p>
 
                                 <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Key Features</h3>
@@ -286,11 +286,11 @@ const GorgiasAlternativesBlog = () => {
                                     </div>
                                 </div>
 
-                                <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Why Dooza Wins</h3>
+                                <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Why Dooza desk Wins</h3>
                                 <ul className="space-y-3 mb-8">
                                     <li className="flex gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-1"/>
-                                        <span><strong>100% Free Seats:</strong> Unlike competitors that charge per agent, Dooza offers unlimited free seats for your team. You only pay for AI usage.</span>
+                                        <span><strong>100% Free Seats:</strong> Unlike competitors that charge per agent, Dooza desk offers unlimited free seats for your team. You only pay for AI usage.</span>
                                     </li>
                                     <li className="flex gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-1"/>
@@ -308,7 +308,7 @@ const GorgiasAlternativesBlog = () => {
 
                                 <div className="bg-primary-50 border border-primary-100 p-6 rounded-xl">
                                     <blockquote className="italic text-slate-700 mb-4">
-                                        "We switched from Gorgias to Dooza and cut our support costs by 60% while handling 3x more conversations. The AI is legitimately impressive."
+                                        "We switched from Gorgias to Dooza desk and cut our support costs by 60% while handling 3x more conversations. The AI is legitimately impressive."
                                     </blockquote>
                                     <div className="font-bold text-primary-700">— Sarah M., Founder of Modern Apparel Co.</div>
                                 </div>
@@ -329,7 +329,7 @@ const GorgiasAlternativesBlog = () => {
                                 <h4 className="font-bold text-slate-900 mb-2">Key Features:</h4>
                                 <ul className="list-disc pl-5 mb-6 space-y-2">
                                     <li><strong>Self-Service Portal:</strong> Customers can track orders and initiate returns without talking to a human.</li>
-                                    <li><strong>AI Sidekick:</strong> Suggests responses for agents (though less autonomous than Dooza).</li>
+                                    <li><strong>AI Sidekick:</strong> Suggests responses for agents (though less autonomous than Dooza desk).</li>
                                     <li><strong>Social Moderation:</strong> Tools to manage comments on Instagram/Facebook ads.</li>
                                 </ul>
 
@@ -339,7 +339,7 @@ const GorgiasAlternativesBlog = () => {
                                     </h4>
                                     <ul className="list-disc pl-5 space-y-1 text-orange-800 text-sm">
                                         <li><strong>Complex Setup:</strong> The self-service portal has a steep learning curve and can take weeks to configure.</li>
-                                        <li><strong>Higher Pricing:</strong> Starts at $99/mo vs Dooza's $29/mo.</li>
+                                        <li><strong>Higher Pricing:</strong> Starts at $99/mo vs Dooza desk's $29/mo.</li>
                                         <li><strong>Less Advanced AI:</strong> Primarily rule-based automation rather than autonomous AI agents.</li>
                                     </ul>
                                 </div>
@@ -379,7 +379,7 @@ const GorgiasAlternativesBlog = () => {
                         <section id="reamaze-review" className="scroll-mt-28">
                             <h2 className="text-3xl font-bold text-slate-900 mb-4">Alternative #5: Re:Amaze</h2>
                             <p className="text-base md:text-lg text-slate-600 mb-4">
-                                A solid budget option for small teams. It covers the basics (live chat, email) well. However, its interface feels dated, and it lacks the deep "native" automation capabilities of Dooza or Richpanel.
+                                A solid budget option for small teams. It covers the basics (live chat, email) well. However, its interface feels dated, and it lacks the deep "native" automation capabilities of Dooza desk or Richpanel.
                             </p>
                         </section>
 
@@ -387,7 +387,7 @@ const GorgiasAlternativesBlog = () => {
                         <section id="native-difference" className="scroll-mt-28">
                             <h2 className="text-3xl font-bold text-slate-900 mb-6">Why "Shopify Native" Matters</h2>
                             <p className="text-base md:text-lg text-slate-600 mb-8 leading-relaxed">
-                                Most helpdesks connect to Shopify via a basic API—they just pull data to display it. <strong>True native platforms</strong> (like Dooza & Richpanel) go deeper, acting as an extension of your store admin.
+                                Most helpdesks connect to Shopify via a basic API—they just pull data to display it. <strong>True native platforms</strong> (like Dooza desk & Richpanel) go deeper, acting as an extension of your store admin.
                             </p>
                             
                             <div className="grid md:grid-cols-2 gap-6">
@@ -427,13 +427,13 @@ const GorgiasAlternativesBlog = () => {
 
                         {/* Comparison Table */}
                         <section id="comparison" className="scroll-mt-28">
-                            <h2 className="text-3xl font-bold text-slate-900 mb-6">Dooza vs Richpanel: The Native Showdown</h2>
+                            <h2 className="text-3xl font-bold text-slate-900 mb-6">Dooza desk vs Richpanel: The Native Showdown</h2>
                             <div className="overflow-x-auto border border-slate-200 rounded-xl shadow-sm">
                                 <table className="w-full border-collapse text-left bg-white">
                                     <thead className="bg-slate-50 text-slate-900">
                                         <tr>
                                             <th className="p-4 border-b font-bold">Feature</th>
-                                            <th className="p-4 border-b font-bold text-primary-700 bg-primary-50">Dooza.co</th>
+                                            <th className="p-4 border-b font-bold text-primary-700 bg-primary-50">Dooza desk.co</th>
                                             <th className="p-4 border-b font-bold">Richpanel</th>
                                         </tr>
                                     </thead>
@@ -478,9 +478,9 @@ const GorgiasAlternativesBlog = () => {
                             <h2 className="text-3xl font-bold text-slate-900 mb-6">Conclusion: Making the Right Choice</h2>
                             <div className="space-y-6">
                                 <div className="bg-green-50 p-6 rounded-xl border border-green-100">
-                                    <h3 className="font-bold text-green-900 text-lg mb-2">🥇 For Most Shopify Stores: Dooza.co</h3>
+                                    <h3 className="font-bold text-green-900 text-lg mb-2">🥇 For Most Shopify Stores: Dooza desk.co</h3>
                                     <p className="text-green-800">
-                                        If you want AI-native automation, deep Shopify integration, easy setup, and affordable pricing, Dooza is the clear winner in 2025. It balances power and simplicity perfectly.
+                                        If you want AI-native automation, deep Shopify integration, easy setup, and affordable pricing, Dooza desk is the clear winner in 2025. It balances power and simplicity perfectly.
                                     </p>
                                 </div>
                                 <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
@@ -495,7 +495,7 @@ const GorgiasAlternativesBlog = () => {
                                         The Pricing Advantage
                                     </h3>
                                     <p className="text-blue-800">
-                                        Dooza is the only platform that doesn't charge for seats. <strong>Your human agents are 100% free, forever.</strong> You only pay for the AI automation that actually resolves tickets and saves you time.
+                                        Dooza desk is the only platform that doesn't charge for seats. <strong>Your human agents are 100% free, forever.</strong> You only pay for the AI automation that actually resolves tickets and saves you time.
                                     </p>
                                 </div>
                             </div>
@@ -511,20 +511,20 @@ const GorgiasAlternativesBlog = () => {
                                         a: "Merchants are switching due to escalating costs (price hikes and per-seat charges), declining support quality with slower response times, and limited AI capabilities that often require expensive add-ons."
                                     },
                                     {
-                                        q: "Is Dooza really easier to set up than Gorgias?",
-                                        a: "Yes. Dooza's one-click Shopify integration and AI auto-configuration means you can be up and running in minutes. Gorgias often requires extensive manual configuration of rules and macros."
+                                        q: "Is Dooza desk really easier to set up than Gorgias?",
+                                        a: "Yes. Dooza desk's one-click Shopify integration and AI auto-configuration means you can be up and running in minutes. Gorgias often requires extensive manual configuration of rules and macros."
                                     },
                                     {
-                                        q: "Can I migrate my data from Gorgias to Dooza?",
-                                        a: "Absolutely. Dooza's migration team helps you import historical conversations, macros, and settings—usually completing the process within 24-48 hours."
+                                        q: "Can I migrate my data from Gorgias to Dooza desk?",
+                                        a: "Absolutely. Dooza desk's migration team helps you import historical conversations, macros, and settings—usually completing the process within 24-48 hours."
                                     },
                                     {
                                         q: "Does the AI really work?",
-                                        a: "Dooza's AI is built on the latest LLMs and trained specifically for e-commerce. Most merchants see 60-75% of tickets resolved automatically with high accuracy."
+                                        a: "Dooza desk's AI is built on the latest LLMs and trained specifically for e-commerce. Most merchants see 60-75% of tickets resolved automatically with high accuracy."
                                     },
                                     {
                                         q: "What about phone support?",
-                                        a: "Dooza supports voice through integrations with Twilio and others, though most e-commerce brands find chat/email/social sufficient."
+                                        a: "Dooza desk supports voice through integrations with Twilio and others, though most e-commerce brands find chat/email/social sufficient."
                                     }
                                 ].map((item, idx) => (
                                     <div key={idx} className="border-b border-slate-200 pb-4 last:border-0">
