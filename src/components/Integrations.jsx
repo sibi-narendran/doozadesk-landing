@@ -1,15 +1,17 @@
 import React from 'react';
+import { Globe } from 'lucide-react';
 
 const Integrations = () => {
     const tools = [
-        { name: "Jira", icon: "https://cdn.simpleicons.org/jira" },
-        { name: "Salesforce", icon: "https://cdn.simpleicons.org/salesforce" },
-        { name: "Slack", icon: "https://cdn.simpleicons.org/slack" },
-        { name: "Asana", icon: "https://cdn.simpleicons.org/asana" },
+        { name: "WhatsApp", icon: "https://cdn.simpleicons.org/whatsapp" },
+        { name: "Instagram", icon: "https://cdn.simpleicons.org/instagram" },
         { name: "Shopify", icon: "https://cdn.simpleicons.org/shopify" },
-        { name: "HubSpot", icon: "https://cdn.simpleicons.org/hubspot" },
-        { name: "Zoom", icon: "https://cdn.simpleicons.org/zoom" },
-        { name: "Trello", icon: "https://cdn.simpleicons.org/trello" }
+        { name: "Zendesk", icon: "https://cdn.simpleicons.org/zendesk" },
+        { name: "Mail", icon: "https://cdn.simpleicons.org/gmail" },
+        { name: "Gorgias", icon: "https://cdn.simpleicons.org/gorgias" },
+        { name: "Vapi Voice AI", icon: "https://logo.clearbit.com/vapi.ai" },
+        { name: "Messenger", icon: "https://cdn.simpleicons.org/messenger" },
+        { name: "Websites", iconComponent: <Globe className="w-12 h-12 mb-4 opacity-75 group-hover:opacity-100 transition-opacity text-slate-500 group-hover:text-primary-600" /> }
     ];
 
     return (
@@ -22,10 +24,14 @@ const Integrations = () => {
                     Integrate Doozadesk with the tools you already use. Sync data, automate workflows, and keep everything in sync.
                 </p>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
                     {tools.map((tool, idx) => (
                         <div key={idx} className="flex flex-col items-center justify-center p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-md transition-all hover:border-primary-100 group hover:-translate-y-1">
-                            <img src={tool.icon} alt={tool.name} className="w-12 h-12 mb-4 opacity-75 group-hover:opacity-100 transition-opacity" />
+                            {tool.icon ? (
+                                <img src={tool.icon} alt={tool.name} className="w-12 h-12 mb-4 opacity-75 group-hover:opacity-100 transition-opacity object-contain" />
+                            ) : (
+                                tool.iconComponent
+                            )}
                             <span className="text-lg font-semibold text-slate-500 group-hover:text-primary-600 transition-colors">{tool.name}</span>
                         </div>
                     ))}
