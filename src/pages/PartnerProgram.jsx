@@ -93,7 +93,7 @@ const PartnerProgram = () => {
                         
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <button 
-                                onClick={handleAction}
+                                onClick={() => navigate('/partner-signup')}
                                 className="w-full sm:w-auto px-8 py-4 bg-gray-900 text-white rounded-full font-bold text-lg hover:bg-gray-800 transition-all shadow-lg hover:-translate-y-1 flex items-center justify-center gap-2"
                             >
                                 Join Now <ArrowRight size={20} />
@@ -208,65 +208,65 @@ const PartnerProgram = () => {
                                             Based on 30% commission
                                         </div>
                                     </div>
-                                    
-                                    <div className="space-y-8">
-                                        {/* Slider for Customers */}
-                                        <div>
-                                            <div className="flex justify-between items-end mb-4">
+                                
+                                <div className="space-y-8">
+                                    {/* Slider for Customers */}
+                                    <div>
+                                        <div className="flex justify-between items-end mb-4">
                                                 <label className="text-sm font-semibold text-gray-700">
-                                                    Total Customers Onboarded
-                                                </label>
+                                                Total Customers Onboarded
+                                            </label>
                                                 <div className="flex items-baseline gap-1">
                                                     <span className="text-3xl font-bold text-gray-900">{referralsPerMonth}</span>
                                                     <span className="text-gray-500 font-medium">customers</span>
-                                                </div>
                                             </div>
-                                            <input 
-                                                type="range" 
-                                                min="1" 
+                                        </div>
+                                        <input 
+                                            type="range" 
+                                            min="1" 
                                                 max="100" 
-                                                value={referralsPerMonth} 
-                                                onChange={(e) => setReferralsPerMonth(parseInt(e.target.value))}
+                                            value={referralsPerMonth} 
+                                            onChange={(e) => setReferralsPerMonth(parseInt(e.target.value))}
                                                 className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary-600 hover:accent-primary-500 transition-all"
-                                            />
+                                        />
                                             <div className="flex justify-between mt-2 text-xs text-gray-400 font-medium">
                                                 <span>1</span>
                                                 <span>50</span>
                                                 <span>100+</span>
                                             </div>
-                                        </div>
+                                    </div>
 
-                                        {/* Avg Deal Value Input */}
-                                        <div>
+                                    {/* Avg Deal Value Input */}
+                                    <div>
                                             <label className="text-sm font-semibold text-gray-700 mb-2 block">
                                                 Our Average Deal Value
-                                            </label>
+                                        </label>
                                             <div className="relative group">
                                                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                                                     <span className="text-gray-400 font-semibold">$</span>
                                                 </div>
-                                                <input 
-                                                    type="number" 
-                                                    value={avgDealValue}
-                                                    onChange={(e) => setAvgDealValue(Number(e.target.value))}
+                                            <input 
+                                                type="number" 
+                                                value={avgDealValue}
+                                                onChange={(e) => setAvgDealValue(Number(e.target.value))}
                                                     className="block w-full pl-8 pr-12 py-4 bg-white border-gray-200 border rounded-xl text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all font-semibold text-lg shadow-sm"
-                                                />
-                                            </div>
+                                            />
                                         </div>
-                                        
-                                        {/* Results */}
+                                    </div>
+                                    
+                                    {/* Results */}
                                         <div className="grid grid-cols-2 gap-4 pt-2">
                                             <div className="p-5 bg-linear-to-br from-gray-50 to-white rounded-2xl border border-gray-100 shadow-sm">
                                                 <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Your Monthly Affiliate Income</p>
                                                 <p className="text-2xl md:text-3xl font-bold text-gray-900">
-                                                    ${parseInt(monthlyEarnings).toLocaleString()}
-                                                </p>
-                                            </div>
+                                                ${parseInt(monthlyEarnings).toLocaleString()}
+                                            </p>
+                                        </div>
                                             <div className="p-5 bg-linear-to-br from-primary-50 to-white rounded-2xl border border-primary-100 shadow-sm">
                                                 <p className="text-xs font-semibold text-primary-600 uppercase tracking-wider mb-1">Yearly Income</p>
                                                 <p className="text-2xl md:text-3xl font-bold text-primary-600">
-                                                    ${yearlyEarnings}
-                                                </p>
+                                                ${yearlyEarnings}
+                                            </p>
                                             </div>
                                         </div>
                                     </div>
