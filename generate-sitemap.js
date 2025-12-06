@@ -24,9 +24,19 @@ const pages = [
     priority: 0.8,
   },
   {
-    url: '/gorgias-alternative',
+    url: '/blog',
     changefreq: 'weekly',
     priority: 0.9,
+  },
+  {
+    url: '/blog/gorgias-alternatives',
+    changefreq: 'monthly',
+    priority: 0.8,
+  },
+  {
+    url: '/blog/instagram-direct',
+    changefreq: 'monthly',
+    priority: 0.8,
   },
 ];
 

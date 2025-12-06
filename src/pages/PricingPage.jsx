@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Pricing from '../components/Pricing';
@@ -8,12 +9,14 @@ import { HelpCircle } from 'lucide-react';
 const PricingPage = () => {
     // We can reuse the existing Pricing component but wrap it in a page layout
     // and maybe add an FAQ section below it.
+    const navigate = useNavigate();
 
     // Dummy function for openModal since the Pricing component expects it
     // In a real scenario, we might want to pass the actual modal handler or redirect logic
     // For now, let's make it redirect to signup
-    const handlePricingAction = () => {
-        window.location.href = '/get-started?type=signup&redirect=https://app.doozadesk.com/app/auth/signup';
+    const handlePricingAction = (e) => {
+        if (e) e.preventDefault();
+        navigate('/get-started?type=signup&redirect=https://app.doozadesk.com/app/auth/signup');
     };
 
     const faqs = [
@@ -57,7 +60,7 @@ const PricingPage = () => {
                             {faqs.map((faq, index) => (
                                 <div key={index} className="bg-slate-50 rounded-xl p-6 border border-slate-100">
                                     <h3 className="text-lg font-bold text-slate-900 mb-3 flex items-start gap-3">
-                                        <HelpCircle className="w-5 h-5 text-primary-500 mt-1 flex-shrink-0" />
+                                        <HelpCircle className="w-5 h-5 text-primary-500 mt-1 shrink-0" />
                                         {faq.question}
                                     </h3>
                                     <p className="text-slate-600 ml-8">

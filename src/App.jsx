@@ -7,7 +7,10 @@ const AuthGateway = lazy(() => import('./pages/AuthGateway'));
 const Admin = lazy(() => import('./pages/Admin'));
 const FeaturesPage = lazy(() => import('./pages/FeaturesPage'));
 const PricingPage = lazy(() => import('./pages/PricingPage'));
-const GorgiasAlternative = lazy(() => import('./pages/GorgiasAlternative'));
+const Blog = lazy(() => import('./pages/Blog'));
+const BlogPost = lazy(() => import('./pages/BlogPost'));
+const InstagramDirectBlog = lazy(() => import('./pages/InstagramDirectBlog'));
+const GorgiasAlternativesBlog = lazy(() => import('./pages/GorgiasAlternativesBlog'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 // Loading Fallback
@@ -26,7 +29,10 @@ function App() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/features" element={<FeaturesPage />} />
         <Route path="/pricing" element={<PricingPage />} />
-        <Route path="/gorgias-alternative" element={<GorgiasAlternative />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/instagram-direct" element={<InstagramDirectBlog />} />
+        <Route path="/blog/gorgias-alternatives" element={<GorgiasAlternativesBlog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
