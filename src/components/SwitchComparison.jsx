@@ -85,7 +85,7 @@ const SwitchComparison = ({ openModal }) => {
                         </ul>
                         <div className="mt-8 pt-8 border-t border-slate-100">
                             <a 
-                                href="https://app.Dooza desk.com/app/auth/signup" 
+                                href="https://app.doozadesk.com/app/auth/signup" 
                                 onClick={openModal}
                                 className="flex items-center justify-center w-full gap-2 bg-primary-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-primary-700 transition-all hover:shadow-lg hover:-translate-y-1"
                             >

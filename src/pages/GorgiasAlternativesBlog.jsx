@@ -35,7 +35,7 @@ const GorgiasAlternativesBlog = () => {
             setIsBookingModalOpen(true);
         } else {
             const type = url && url.includes('login') ? 'login' : 'signup';
-            const redirect = url || 'https://app.Dooza desk.com/app/auth/signup';
+            const redirect = url || 'https://app.doozadesk.com/app/auth/signup';
             navigate(`/get-started?type=${type}&redirect=${encodeURIComponent(redirect)}`);
         }
     };

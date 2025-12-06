@@ -7,7 +7,7 @@ import SEO from '../components/SEO';
 const AuthGateway = () => {
     const [searchParams] = useSearchParams();
     const type = searchParams.get('type') || 'signup'; // 'login' or 'signup'
-    const redirectUrl = searchParams.get('redirect') || 'https://app.Dooza desk.com/app/auth/signup';
+    const redirectUrl = searchParams.get('redirect') || 'https://app.doozadesk.com/app/auth/signup';
 
     const [formData, setFormData] = useState({
         name: '',

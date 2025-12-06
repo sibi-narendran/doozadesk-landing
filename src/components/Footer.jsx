@@ -35,7 +35,7 @@ const Footer = () => {
                             <li><a href="#" className="hover:text-primary-600">About</a></li>
                             <li><Link to="/partners" className="hover:text-primary-600">Partner Program</Link></li>
                             <li><a href="#" className="hover:text-primary-600">Contact</a></li>
-                            <li><a href="https://app.Dooza desk.com/app/auth/login" className="hover:text-primary-600">Login</a></li>
+                            <li><a href="https://app.doozadesk.com/app/auth/login" className="hover:text-primary-600">Login</a></li>
                         </ul>
                     </div>
                 </div>

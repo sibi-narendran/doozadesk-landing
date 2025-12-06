@@ -16,7 +16,7 @@ const PricingPage = () => {
     // For now, let's make it redirect to signup
     const handlePricingAction = (e) => {
         if (e) e.preventDefault();
-        navigate('/get-started?type=signup&redirect=https://app.dooza.co/app/auth/signup');
+        navigate('/get-started?type=signup&redirect=https://app.doozadesk.com/app/auth/signup');
     };
 
     const faqs = [

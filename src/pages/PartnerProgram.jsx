@@ -35,7 +35,7 @@ const PartnerProgram = () => {
         } else {
             const type = url && url.includes('login') ? 'login' : 'signup';
             // Fixed URL to not have spaces
-            const redirect = url || 'https://app.dooza.co/app/auth/signup';
+            const redirect = url || 'https://app.doozadesk.com/app/auth/signup';
             navigate(`/get-started?type=${type}&redirect=${encodeURIComponent(redirect)}`);
         }
     };
@@ -69,7 +69,7 @@ const PartnerProgram = () => {
                 title="Dooza desk Partner Program | Earn 30% Recurring Commission" 
                 description="Join the Dooza desk Partner Program and earn 30% lifetime recurring commission. Partner with the leading AI customer support platform."
                 keywords="affiliate program, partner program, saas affiliate, recurring commission, software partner"
-                canonicalUrl="https://dooza.co/partners"
+                canonicalUrl="https://doozadesk.com/partners"
             />
             
             <Navbar openModal={handleAction} />
@@ -93,7 +93,7 @@ const PartnerProgram = () => {
                         
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <button 
-                                onClick={() => navigate('/partner-signup')}
+                                onClick={handleAction}
                                 className="w-full sm:w-auto px-8 py-4 bg-gray-900 text-white rounded-full font-bold text-lg hover:bg-gray-800 transition-all shadow-lg hover:-translate-y-1 flex items-center justify-center gap-2"
                             >
                                 Join Now <ArrowRight size={20} />

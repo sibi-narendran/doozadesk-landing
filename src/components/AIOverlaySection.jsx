@@ -40,7 +40,7 @@ const AIOverlaySection = ({ openModal }) => {
                         </div>
 
                         <a 
-                            href="https://app.Dooza desk.com/app/auth/signup" 
+                            href="https://app.doozadesk.com/app/auth/signup" 
                             onClick={openModal}
                             className="inline-flex items-center gap-2 text-primary-600 font-bold text-lg hover:text-primary-700 transition-colors group"
                         >

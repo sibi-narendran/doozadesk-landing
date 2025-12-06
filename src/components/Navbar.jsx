@@ -30,8 +30,8 @@ const Navbar = ({ openModal }) => {
                         <Link to="/partners" className="text-[15px] font-medium text-slate-600 hover:text-primary-600 transition-colors">Partners</Link>
                         <Link to="/pricing" className="text-[15px] font-medium text-slate-600 hover:text-primary-600 transition-colors">Pricing</Link>
                         <Link to="/blog" className="text-[15px] font-medium text-slate-600 hover:text-primary-600 transition-colors">Blog</Link>
-                        <a href="https://app.Dooza desk.com/app/login" onClick={openModal} className="text-[15px] font-medium text-slate-600 hover:text-primary-600 transition-colors">Login</a>
-                        <a href="https://app.Dooza desk.com/app/auth/signup" onClick={openModal} className="bg-slate-900 text-white px-5 py-2.5 rounded-full text-[15px] font-medium hover:bg-slate-800 transition-all hover:shadow-lg hover:-translate-y-0.5">
+                        <a href="https://app.Doozadesk.com/app/login" onClick={openModal} className="text-[15px] font-medium text-slate-600 hover:text-primary-600 transition-colors">Login</a>
+                        <a href="https://app.Doozadesk.com/app/auth/signup" onClick={openModal} className="bg-slate-900 text-white px-5 py-2.5 rounded-full text-[15px] font-medium hover:bg-slate-800 transition-all hover:shadow-lg hover:-translate-y-0.5">
                             Create free account
                         </a>
                     </div>
@@ -53,8 +53,8 @@ const Navbar = ({ openModal }) => {
                             <Link to="/partners" onClick={() => setIsOpen(false)} className="block w-full text-center px-3 py-3 text-base font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50 rounded-lg transition-colors">Partners</Link>
                             <Link to="/pricing" onClick={() => setIsOpen(false)} className="block w-full text-center px-3 py-3 text-base font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50 rounded-lg transition-colors">Pricing</Link>
                             <Link to="/blog" onClick={() => setIsOpen(false)} className="block w-full text-center px-3 py-3 text-base font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50 rounded-lg transition-colors">Blog</Link>
-                            <a href="https://app.Dooza desk.com/app/login" onClick={openModal} className="block w-full text-center px-3 py-3 text-base font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50 rounded-lg transition-colors">Login</a>
-                            <a href="https://app.Dooza desk.com/app/auth/signup" onClick={openModal} className="block w-full text-center bg-primary-600 text-white px-3 py-3 rounded-lg text-base font-medium hover:bg-primary-700 transition-colors shadow-md">
+                            <a href="https://app.doozadesk.com/app/login" onClick={openModal} className="block w-full text-center px-3 py-3 text-base font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50 rounded-lg transition-colors">Login</a>
+                            <a href="https://app.doozadesk.com/app/auth/signup" onClick={openModal} className="block w-full text-center bg-primary-600 text-white px-3 py-3 rounded-lg text-base font-medium hover:bg-primary-700 transition-colors shadow-md">
                                 Create free account
                             </a>
                         </div>

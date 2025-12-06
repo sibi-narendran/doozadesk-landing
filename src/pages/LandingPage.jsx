@@ -12,7 +12,6 @@ import BottomCTA from '../components/BottomCTA';
 import Footer from '../components/Footer';
 import BookingModal from '../components/BookingModal';
 import SEO from '../components/SEO';
-import FAQ, { faqs } from '../components/FAQ';
 
 function LandingPage() {
     const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
@@ -32,12 +31,12 @@ function LandingPage() {
             // It's a login/signup link -> Redirect to Auth Gateway Page
             // Determine type based on URL or text
             const type = url && url.includes('login') ? 'login' : 'signup';
-            const redirect = url || 'https://app.Dooza desk.com/app/auth/signup';
+            const redirect = url || 'https://app.doozadesk.com/app/auth/signup';
 
             navigate(`/get-started?type=${type}&redirect=${encodeURIComponent(redirect)}`);
         }
 
-        sessionStorage.setItem('Dooza desk_popup_shown', 'true');
+        sessionStorage.setItem('doozadesk_popup_shown', 'true');
     };
 
     // Timer: 10 seconds
@@ -63,10 +62,10 @@ function LandingPage() {
 
     // Auto-open logic -> Open Booking Modal
     useEffect(() => {
-        const hasShown = sessionStorage.getItem('Dooza desk_popup_shown');
+        const hasShown = sessionStorage.getItem('doozadesk_popup_shown');
         if (timeElapsed && hasScrolled && !hasShown && !isBookingModalOpen) {
             setIsBookingModalOpen(true);
-            sessionStorage.setItem('Dooza desk_popup_shown', 'true');
+            sessionStorage.setItem('doozadesk_popup_shown', 'true');
         }
     }, [timeElapsed, hasScrolled, isBookingModalOpen]);
 
@@ -75,17 +74,17 @@ function LandingPage() {
         "@graph": [
             {
                 "@type": "Organization",
-                "name": "Dooza desk",
-                "url": "https://Dooza desk.com",
-                "logo": "https://Dooza desk.com/favicon.png",
+                "name": "Doozadesk",
+                "url": "https://doozadesk.com",
+                "logo": "https://doozadesk.com/favicon.png",
                 "sameAs": [
-                    "https://twitter.com/Dooza desk",
-                    "https://linkedin.com/company/Dooza desk"
+                    "https://twitter.com/doozadesk",
+                    "https://linkedin.com/company/doozadesk"
                 ]
             },
             {
                 "@type": "SoftwareApplication",
-                "name": "Dooza desk",
+                "name": "Doozadesk",
                 "applicationCategory": "BusinessApplication",
                 "operatingSystem": "Web",
                 "offers": {
@@ -94,17 +93,6 @@ function LandingPage() {
                     "priceCurrency": "USD",
                     "description": "Free for unlimited human agents"
                 }
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": faqs.map(faq => ({
-                    "@type": "Question",
-                    "name": faq.question,
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": faq.answer
-                    }
-                }))
             }
         ]
     };
@@ -113,9 +101,9 @@ function LandingPage() {
         <div className="min-h-screen bg-white font-sans text-slate-900">
             <SEO 
                 title="AI-Powered Customer Support Platform" 
-                description="Dooza desk is the all-in-one customer support platform with AI agents, unified inbox, and omnichannel support. Scale your support without scaling headcount."
+                description="Doozadesk is the all-in-one customer support platform with AI agents, unified inbox, and omnichannel support. Scale your support without scaling headcount."
                 keywords="customer support, AI support agents, helpdesk software, omnichannel support, customer service automation"
-                canonicalUrl="https://Dooza desk.com/"
+                canonicalUrl="https://doozadesk.com/"
                 structuredData={structuredData}
             />
             <Navbar openModal={handleAction} />
@@ -127,7 +115,6 @@ function LandingPage() {
                 <Testimonials />
                 <Integrations />
                 <Pricing openModal={handleAction} />
-                <FAQ />
                 <BottomCTA openModal={handleAction} />
             </main>
             <Footer />
